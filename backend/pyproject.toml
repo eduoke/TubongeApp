@@ -7,6 +7,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+fastapi = "^0.111.1"
+uvicorn = {extras = ["standard"], version = "^0.30.3"}
+openai = "^1.37.1"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -35,7 +38,7 @@ select = [
 [tool.mypy]
 python_version = "3.12"
 strict = true
-mypy_path = "./backend/"
+mypy_path = "./src/"
 allow_untyped_globals = true
 check_untyped_defs = true
 disallow_any_decorated = true
