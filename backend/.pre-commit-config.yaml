@@ -20,13 +20,13 @@ repos:
         args: [--fix]
       # run the Ruff formatter
       - id: ruff-format
-  # - repo: local
-  #   hooks:
-  #     - id: mypy
-  #       name: Run mypy
-  #       entry: .venv/Scripts/mypy.exe
-  #       exclude: .env
-  #       language: python
-  #       language_version: python3.12
-  #       types: ["python"]
-  #       require_serial: true
+  - repo: local
+    hooks:
+      - id: mypy
+        name: Run mypy
+        entry: .venv/Scripts/mypy.exe
+        exclude: .env
+        language: python
+        language_version: python3.12
+        types: ["python"]
+        require_serial: true
