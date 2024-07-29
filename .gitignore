@@ -175,6 +175,10 @@ dist
 dist-ssr
 *.local
 
+# local files
+pnpm-lock.yaml
+poetry.lock
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
